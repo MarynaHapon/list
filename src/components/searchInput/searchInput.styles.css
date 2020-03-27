@@ -1,0 +1,44 @@
+.searchInput {
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px -1px rgba(0, 0, 0, .3);
+    overflow: hidden;
+    font-size: 0;
+}
+
+.searchInputField {
+    font-size: 22px;
+    line-height: 40px;
+    height: 40px;
+    padding: 5px 10px;
+    width: 100%;
+    z-index: 1;
+    color: #282c34;
+    border: 0;
+    background-color: #ffffff;
+}
+
+.searchInputField:focus {
+    outline: none;
+    outline-offset: 0;
+}
+
+.searchInputDivider {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #7d3cff;
+    transition: .3s ease-in-out;
+}
+
+.searchInputField:hover ~ .searchInputDivider {
+    background-color: #f2d53c;
+}
+
+.searchInputField:focus ~ .searchInputDivider {
+    background-color: #00bcd4;
+}

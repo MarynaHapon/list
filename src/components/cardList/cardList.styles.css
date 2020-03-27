@@ -1,0 +1,9 @@
+.cardList {
+    position: relative;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 40px auto;
+    width: 85vw;
+    min-height: 100vh;
+}
